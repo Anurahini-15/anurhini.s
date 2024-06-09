@@ -1,0 +1,14 @@
+num1_input = input()
+num2_input = input()
+try:
+    num1 = float(num1_input)
+    num2 = float(num2_input)
+    if num2== 0:
+        print("Error: Cannot divide or modulo by zero.")
+    else:
+        division_result = num1 / num2
+        modulo_result = num1 % num2
+        print(f"Division result: {division_result}")
+        print("Modulo result:",int(modulo_result))
+except ValueError:
+    print("Error: Non-numeric input provided.")
