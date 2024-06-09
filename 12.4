@@ -1,0 +1,14 @@
+def is_power_of_three():
+    n = int(input())
+
+    # Check if n is a power of three
+    if n <= 0:
+        print(False)
+    else:
+        x = n & (n - 1)
+        if x == 0 and (n & 0xAAAAAAAA) == 0:
+            print(True)
+        else:
+            print(False)
+
+is_power_of_three()
