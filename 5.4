@@ -1,0 +1,12 @@
+def is_palindrome(word):
+    return word == word[::-1]
+
+def filter_non_palindromic_words(input_string):
+    words = input_string.split()
+    non_palindromic_words = [word for word in words if not is_palindrome(word)]
+    return ' '.join(non_palindromic_words)
+
+
+input_string = input().lower()
+output_string = filter_non_palindromic_words(input_string)
+print(output_string)
