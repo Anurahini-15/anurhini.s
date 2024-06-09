@@ -1,0 +1,15 @@
+c=int(input())
+d=[]
+a=input().split()
+a=[int(x) for x in a]
+b=input().split()
+b=[int(x) for x in b] 
+for i in range(c):
+    for j in range(c):
+        if a[i]==b[j]:
+            if j in d:
+                continue
+            else:
+                d.append(j)
+for i in d:
+    print(i,end=" ")
